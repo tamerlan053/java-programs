@@ -2,7 +2,7 @@ package packages.package3;
 
 import java.util.Scanner;
 
-public class FootballPlayerApp {
+public class FootballerApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
