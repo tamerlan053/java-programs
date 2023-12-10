@@ -1,6 +1,6 @@
 package packages.package3;
 
-public class FootballPlayer {
+public class Footballer {
     public String name;
     private int age;
     private int rating;
