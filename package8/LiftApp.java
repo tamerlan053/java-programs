@@ -2,7 +2,7 @@ package packages.package8;
 
 import java.util.Scanner;
 
-public class LiftApp {
+public class ElevatorApp {
     public static void main(String[] args) {
         Elevator elevator = new Elevator();
         elevator.setMaximumCapacity(5);
