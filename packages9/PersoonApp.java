@@ -13,6 +13,10 @@ public class PersoonApp {
         System.out.println(person);
         System.out.println("He is " + person.getAge() + " years old");
 
-
+        System.out.println(person.getHeight());
+        person.grow();
+        System.out.println(person.getHeight());
+        person.grow(50);
+        System.out.println(person.getHeight());
     }
 }
