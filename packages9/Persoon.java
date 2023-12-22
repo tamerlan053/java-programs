@@ -1,6 +1,6 @@
 package packages.package9;
 
-public class Person {
+public class Persoon {
     private String firstName;
     private String lastName;
     private double height;
@@ -82,4 +82,35 @@ public class Person {
         }
     }
 
+       public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public int getAge() {
+        return 2023 - birthYear;
+    }
+
+    public void grow() {
+        height += 1;
+    }
+
+    public void grow(int amount) {
+        height += amount;
+    }
 }
