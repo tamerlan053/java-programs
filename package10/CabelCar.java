@@ -1,4 +1,4 @@
-package packaga.ex3;
+package packages.package10;
 
 public class CableCar {
     private String name;
