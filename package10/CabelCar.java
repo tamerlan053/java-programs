@@ -18,4 +18,12 @@ public class CableCar {
         this.length = length;
         setSpeed(speed);
     }
+
+     public CableCar(String name, String country) {
+        this(name, country, 2, 6);
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
