@@ -46,4 +46,72 @@ public class CableCar {
         this.numberOfCabins = numberOfCabins;
     }
 
+    public int getNumberOfCabins() {
+        return numberOfCabins;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+
+        if (speed <= 3) {
+            this.speed = 3;
+        } else if (speed >= 8) {
+            this.speed = 8;
+        }
+    }
+
+    public void setPassengersPerCabin(int passengersPerCabin) {
+        this.passengersPerCabin = passengersPerCabin;
+    }
+
+    public void setHeights(int height1, int height2) {
+        this.mountainStationHeight = Math.max(height1, height2);
+        this.valleyStationHeight = Math.min(height1, height2);
+    }
+
+    public int getHeightDifference() {
+        return mountainStationHeight - valleyStationHeight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public int getValleyStationHeight() {
+        return valleyStationHeight;
+    }
+
+    public int getMountainStationHeight() {
+        return mountainStationHeight;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getPassengersPerCabin() {
+        return passengersPerCabin;
+    }
+
+    public int getDuration() {
+        int duration = (int) ((length * 1000) / getSpeed()) / 60;
+        return duration;
+    }
+
+    public int getTransportCapacity() {
+        return (60 * numberOfCabins * passengersPerCabin) / getDuration();
+    }
+
+    public String toString() {
+        return String.format(name + " " + getHeightDifference());
+    }
 }
+
