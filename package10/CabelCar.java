@@ -26,4 +26,24 @@ public class CableCar {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setCountry(String country) {
+        for (String validCountry : VALID_COUNTRIES) {
+            if (validCountry.equals(country)) {
+                this.country = country;
+                return;
+            }
+        }
+
+        this.country = "Unknown";
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setNumberOfCabins(int numberOfCabins) {
+        this.numberOfCabins = numberOfCabins;
+    }
+
 }
