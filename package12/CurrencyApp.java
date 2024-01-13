@@ -2,7 +2,7 @@ package packages.package12;
 
 import java.util.ArrayList;
 
-public class CoinApp {
+public class CurrencyApp {
     public static void main(String[] args) {
         ArrayList<Coin> coins = new ArrayList<>();
 
