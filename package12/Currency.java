@@ -21,4 +21,12 @@ public class Currency {
     public String getName() {
         return name.toUpperCase();
     }
+
+    public double getExchangeRate() {
+        return exchangeRate;
+    }
+
+    public int getCount() {
+        return count;
+    }
 }
