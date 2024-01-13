@@ -11,4 +11,14 @@ public class Currency {
         this.exchangeRate = 1;
         count++;
     }
+
+    public Currency(String name, double exchangeRate) {
+        this.name = name;
+        this.exchangeRate = exchangeRate;
+        count++;
+    }
+
+    public String getName() {
+        return name.toUpperCase();
+    }
 }
