@@ -9,4 +9,18 @@ public class Bingo {
     public Bingo(String name) {
         this.name = name;
     }
+
+    public void addNumber(int number) {
+        numbers.add(number);
+    }
+
+    public boolean hasNumber(int number) {
+        return numbers.contains(number);
+    }
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(name).append(" ").append(numbers);
+        return stringBuilder.toString();
+    }
 }
