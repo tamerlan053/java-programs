@@ -19,5 +19,9 @@ public class BingoApp {
                 bingoCards[i].addNumber(randomNumber);
             }
         }
+
+         for (int i = 0; i < bingoCards.length; i++) {
+            System.out.println(bingoCards[i]);
+        }
     }
 }
