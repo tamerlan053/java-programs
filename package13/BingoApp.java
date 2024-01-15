@@ -23,5 +23,20 @@ public class BingoApp {
          for (int i = 0; i < bingoCards.length; i++) {
             System.out.println(bingoCards[i]);
         }
+
+        boolean won = false;
+
+        while (!won) {
+            int checkedNumber = random.nextInt(100);
+            System.out.println("Number " + checkedNumber + " drawn...");
+
+            for (int i = 0; i < bingoCards.length; i++) {
+                if (bingoCards[i].hasNumber(checkedNumber)) {
+                    System.out.println("BINGO!!");
+                    System.out.println(bingoCards[i]);
+                    won = true;
+                }
+            }
+        }
     }
 }
