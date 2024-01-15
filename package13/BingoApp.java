@@ -12,5 +12,12 @@ public class BingoApp {
         bingoCards[2] = new Bingo("Nele");
         bingoCards[3] = new Bingo("Nick");
         bingoCards[4] = new Bingo("Matt");
+
+        for (int i = 0; i < bingoCards.length; i++) {
+            for (int j = 0; j < 6; j++) {
+                int randomNumber = random.nextInt(100);
+                bingoCards[i].addNumber(randomNumber);
+            }
+        }
     }
 }
