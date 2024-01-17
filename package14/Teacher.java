@@ -30,4 +30,13 @@ public class Teacher {
             }
         }
     }
+
+    public void removeSubject(String subjectName) {
+        for (int i = 0; i < subjects.length; i++) {
+            if (subjects[i] != null && subjects[i].getName().equals(subjectName)) {
+                subjects[i] = null;
+                return;
+            }
+        }
+    }
 }
