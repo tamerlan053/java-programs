@@ -21,5 +21,13 @@ public class Teacher {
         }
     }
 
-
+    public void addSubjects(Subject subject) {
+        for (int i = 0; i < subjects.length; i++) {
+            if (subjects[i] == null) {
+                subjects[i] = subject;
+                System.out.println("Subject " + subject.getName() + " has been added to the teacher.");
+                return;
+            }
+        }
+    }
 }
