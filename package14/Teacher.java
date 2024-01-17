@@ -7,10 +7,10 @@ public class Teacher {
     private int employmentPercentage;
     private Subject[] subjects = new Subject[MAX];
 
-    public Leraar(String voornaam, String achternaam, int aansetlingspercentage) {
-        this.voornaam = voornaam;
-        this.naam = achternaam;
-        setAansetlingspercentage(aansetlingspercentage);
+    public Teacher(String firstName, String lastName, int employmentPercentage) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        setEmploymentPercentage(employmentPercentage);
     }
 
 }
