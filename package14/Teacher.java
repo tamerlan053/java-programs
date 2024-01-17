@@ -13,4 +13,13 @@ public class Teacher {
         setEmploymentPercentage(employmentPercentage);
     }
 
+    public void setEmploymentPercentage(int employmentPercentage) {
+    if (employmentPercentage <= 100) {
+        this.employmentPercentage = employmentPercentage;
+        } else {
+            this.employmentPercentage = 100;
+        }
+    }
+
+
 }
