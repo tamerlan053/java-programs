@@ -29,4 +29,12 @@ public class Subject {
     public String getName() {
         return name;
     }
+
+    public String getCode() {
+        return code;
+    }
+
+    public int getCreditPoints() {
+        return creditPoints;
+    }
 }
