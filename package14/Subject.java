@@ -18,4 +18,15 @@ public class Subject {
     public void setName(String name) {
         this.name = name;
     }
+
+     public void setCreditPoints(int creditPoints) {
+        if (creditPoints <= 18)
+            this.creditPoints = creditPoints;
+        else
+            this.creditPoints = 18;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
