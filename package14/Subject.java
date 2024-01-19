@@ -14,4 +14,8 @@ public class Subject {
     public void setCode(String code) {
         this.code = code;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
