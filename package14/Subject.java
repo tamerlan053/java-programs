@@ -10,4 +10,8 @@ public class Subject {
         this.code = code;
         setCreditPoints(creditPoints);
     }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 }
