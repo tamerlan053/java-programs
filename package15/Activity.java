@@ -16,4 +16,8 @@ public class Activity {
     public LocalDate getDate() {
         return date;
     }
+
+    public String getName() {
+        return name;
+    }
 }
