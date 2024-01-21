@@ -12,4 +12,8 @@ public class Activity {
         this.date = date;
         this.name = name;
     }
+
+    public LocalDate getDate() {
+        return date;
+    }
 }
