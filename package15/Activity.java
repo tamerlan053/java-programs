@@ -20,4 +20,10 @@ public class Activity {
     public String getName() {
         return name;
     }
+
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(String.format("%-15s %s", date.format(FORMATTER), name));
+        return stringBuilder.toString();
+    }
 }
