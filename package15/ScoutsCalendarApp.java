@@ -9,5 +9,14 @@ public class ScoutsCalendarApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MMMM yyyy");
+
+        System.out.println("Enter the year");
+        int year = scanner.nextInt();
+
+        System.out.println("Enter the month number");
+        int monthNumber = scanner.nextInt();
+
+        System.out.println("Enter a day");
+        int day = scanner.nextInt();
     }
 }
