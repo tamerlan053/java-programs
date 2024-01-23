@@ -18,5 +18,18 @@ public class ScoutsCalendarApp {
 
         System.out.println("Enter a day");
         int day = scanner.nextInt();
+
+        ArrayList<Activity> activities = new ArrayList<>();
+
+        while (day != 0 && activities.size() < 10) {
+            System.out.println("Enter the activity");
+            String activity = scanner.next();
+
+            activities.add(new Activity(LocalDate.of(year, monthNumber, day), activity));
+
+            System.out.println("Enter a day");
+            day = scanner.nextInt();
+            scanner.nextLine();
+        }
     }
 }
