@@ -31,5 +31,12 @@ public class ScoutsCalendarApp {
             day = scanner.nextInt();
             scanner.nextLine();
         }
+
+        LocalDate title = LocalDate.of(year, monthNumber, 1);
+
+        System.out.printf("*** Calendar for %S *** %n", title.format(dateTimeFormatter));
+        for (int i = 0; i < activities.size(); i++) {
+            System.out.println(activities.get(i));
+        }
     }
 }
