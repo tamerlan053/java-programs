@@ -16,4 +16,12 @@ public class Person {
     public String getFirstName() {
         return firstName;    
     }
+
+    public void print() {
+        System.out.println(firstName + " " + lastName);
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
