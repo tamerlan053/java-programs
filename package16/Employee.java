@@ -9,4 +9,11 @@ public class Employee extends Person {
     public Employee(String lastName, String firstName) {
         this(lastName, firstName, "general clerk", 1800);
     }
+
+    public Employee(String lastName, String firstName, String position, double salary) {
+        super(firstName, lastName);
+        this.position = position;
+        this.salary = salary;
+        count++;
+    }
 }
