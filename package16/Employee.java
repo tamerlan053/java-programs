@@ -28,4 +28,12 @@ public class Employee extends Person {
     public double getSalary() {
         return salary;
     }
+
+    public void setSalary(double salary) {
+        if (salary < MINIMUM_SALARY) {
+            this.salary = MINIMUM_SALARY;
+        } else {
+            this.salary = salary;
+        }
+    }
 }
