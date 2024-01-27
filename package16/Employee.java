@@ -5,4 +5,8 @@ public class Employee extends Person {
     private double salary;
     private static final double MINIMUM_SALARY = 1000;
     private static int count;
+
+    public Employee(String lastName, String firstName) {
+        this(lastName, firstName, "general clerk", 1800);
+    }
 }
