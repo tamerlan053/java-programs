@@ -16,4 +16,8 @@ public class Employee extends Person {
         this.salary = salary;
         count++;
     }
+
+    public String getPosition() {
+        return position;
+    }
 }
