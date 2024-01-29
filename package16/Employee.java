@@ -47,4 +47,8 @@ public class Employee extends Person {
         System.out.println("Position: " + position);
         System.out.println("Salary: " + getSalary()); // question
     }
+
+    public static int getCount() {
+        return count;
+    }
 }
