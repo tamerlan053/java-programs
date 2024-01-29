@@ -40,4 +40,11 @@ public class Employee extends Person {
     public static double getMinimumSalary() {
         return MINIMUM_SALARY;
     }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("Position: " + position);
+        System.out.println("Salary: " + getSalary()); // question
+    }
 }
