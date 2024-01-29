@@ -36,4 +36,8 @@ public class Employee extends Person {
             this.salary = salary;
         }
     }
+
+    public static double getMinimumSalary() {
+        return MINIMUM_SALARY;
+    }
 }
