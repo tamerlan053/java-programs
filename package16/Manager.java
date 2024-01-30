@@ -13,4 +13,8 @@ public class Manager extends Employee {
         this.bonus = bonus;
         count++;
     }
+    
+    public double getBonus() {
+        return bonus;
+    }
 }
