@@ -7,4 +7,10 @@ public class Manager extends Employee {
     public Manager(String lastName, String firstName, String position, double salary) {
         this(lastName, firstName, position, salary, 50);
     }
+
+    public Manager(String lastName, String firstName, String position, double salary, double bonus) {
+        super(lastName, firstName, position, salary);
+        this.bonus = bonus;
+        count++;
+    }
 }
