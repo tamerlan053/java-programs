@@ -26,4 +26,8 @@ public class Manager extends Employee {
     public double getSalary() {
         return super.getSalary() + bonus;
     }
+
+    public static int getCount() {
+        return count;
+    }
 }
