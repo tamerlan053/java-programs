@@ -21,4 +21,9 @@ public class Manager extends Employee {
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
+
+    @Override
+    public double getSalary() {
+        return super.getSalary() + bonus;
+    }
 }
