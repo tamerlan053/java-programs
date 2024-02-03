@@ -30,4 +30,8 @@ public class Manager extends Employee {
     public static int getCount() {
         return count;
     }
+
+    public double getPremie() {
+        
+    }
 }
