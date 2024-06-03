@@ -9,4 +9,11 @@ public class CalculatorGUI extends JFrame implements ActionListener {
     private JButton[] functionButtons;
     private JButton addButton, subButton, mulButton, divButton, equButton, decButton, clrButton, delButton;
     private JPanel panel;
+
+    private double num1 = 0, num2 = 0, result = 0;
+    private char operator;
+
+    public CalculatorGUI() {
+        
+    }
 }
