@@ -21,5 +21,9 @@ public class CalculatorGUI extends JFrame implements ActionListener {
 
         panel = new JPanel();
         panel.setLayout(new GridLayout(4, 4));
+
+        textField = new JTextField();
+        textField.setPreferredSize(new Dimension(2, 40));
+        textField.setFont(new Font("Arial", Font.PLAIN, 20));
     }
 }
