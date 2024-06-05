@@ -27,5 +27,13 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         textField.setFont(new Font("Arial", Font.PLAIN, 20));
         textField.setHorizontalAlignment(JTextField.RIGHT);
         textField.setEditable(false);
+
+        numberButtons = new JButton[10];
+        for (int i = 0; i < 10; i++) {
+            numberButtons[i] = new JButton(String.valueOf(i));
+            numberButtons[i].setFont(new Font("Arial", Font.PLAIN, 20));
+            numberButtons[i].setFocusable(false);
+            numberButtons[i].addActionListener(this);
+        }
     }
 }
