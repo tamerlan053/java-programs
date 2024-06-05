@@ -25,5 +25,7 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         textField = new JTextField();
         textField.setPreferredSize(new Dimension(2, 40));
         textField.setFont(new Font("Arial", Font.PLAIN, 20));
+        textField.setHorizontalAlignment(JTextField.RIGHT);
+        textField.setEditable(false);
     }
 }
