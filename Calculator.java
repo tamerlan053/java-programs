@@ -65,5 +65,9 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         panel.add(equButton);
         panel.add(decButton);
         panel.add(num1);
+
+        this.add(textField, BorderLayout.NORTH);
+        this.add(panel);
+        this.setVisible(true);
     }
 }
