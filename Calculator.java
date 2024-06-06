@@ -52,5 +52,18 @@ public class CalculatorGUI extends JFrame implements ActionListener {
             button.setFocusable(false);
             button.addActionListener(this);
         }
+
+        panel.add(delButton);
+        panel.add(clrButton);
+        panel.add(divButton);
+        panel.add(mulButton);
+        panel.add(num1);
+        panel.add(num2);
+        panel.add(subButton);
+        panel.add(addButton);
+        panel.add(num2);
+        panel.add(equButton);
+        panel.add(decButton);
+        panel.add(num1);
     }
 }
