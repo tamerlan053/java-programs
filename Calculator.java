@@ -46,5 +46,11 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         delButton = new JButton("Del");
 
         functionButtons = new JButton[]{addButton, subButton, mulButton, divButton, equButton, decButton, clrButton, delButton};
+        
+        for (JButton button : functionButtons) {
+            button.setFont(new Font("Arial", Font.PLAIN, 20));
+            button.setFocusable(false);
+            button.addActionListener(this);
+        }
     }
 }
