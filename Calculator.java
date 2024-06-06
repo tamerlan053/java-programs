@@ -70,4 +70,8 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         this.add(panel);
         this.setVisible(true);
     }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+    }
 }
