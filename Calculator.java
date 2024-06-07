@@ -93,5 +93,16 @@ public class CalculatorGUI extends JFrame implements ActionListener {
                 textField.setText(textField.getText() + str.charAt(i));
             }
         }
+        
+        if (e.getSource() == addButton) {
+            num1 = Double.parseDouble(textField.getText());
+            operator = '+';
+            textField.setText("");
+        }
+        if (e.getSource() == subButton) {
+            num1 = Double.parseDouble(textField.getText());
+            operator = '-';
+            textField.setText("");
+        }
     }
 }
