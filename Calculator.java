@@ -78,5 +78,20 @@ public class CalculatorGUI extends JFrame implements ActionListener {
                 textField.setText(textField.getText().concat(String.valueOf(i)));
             }
         }
+        if (e.getSource() == decButton) {
+            if (!textField.getText().contains(".")) {
+                textField.setText(textField.getText().concat("."));
+            }
+        }
+        if (e.getSource() == clrButton) {
+            textField.setText("");
+        }
+        if (e.getSource() == delButton) {
+            String str = textField.getText();
+            textField.setText("");
+            for (int i = 0; i < str.length() - 1; i++) {
+                textField.setText(textField.getText() + str.charAt(i));
+            }
+        }
     }
 }
