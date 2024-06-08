@@ -114,5 +114,11 @@ public class CalculatorGUI extends JFrame implements ActionListener {
             operator = '/';
             textField.setText("");
         }
+        if (e.getSource() == equButton) {
+            num2 = Double.parseDouble(textField.getText());
+            switch (operator) {
+
+            }
+        }
     }
 }
