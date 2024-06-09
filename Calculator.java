@@ -117,7 +117,22 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         if (e.getSource() == equButton) {
             num2 = Double.parseDouble(textField.getText());
             switch (operator) {
-
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 != 0) {
+                        result = num1 / num2;
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Error dividing by !");
+                    }
+                    break;
             }
         }
     }
