@@ -14,7 +14,7 @@ public class CalculatorGUI extends JFrame implements ActionListener {
     private char operator;
 
     public CalculatorGUI() {
-        this.setTitle("Calculator");
+        this.setTitle("Калькулятор");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(400, 400);
         this.setResizable(false);
@@ -46,7 +46,6 @@ public class CalculatorGUI extends JFrame implements ActionListener {
         delButton = new JButton("Del");
 
         functionButtons = new JButton[]{addButton, subButton, mulButton, divButton, equButton, decButton, clrButton, delButton};
-        
         for (JButton button : functionButtons) {
             button.setFont(new Font("Arial", Font.PLAIN, 20));
             button.setFocusable(false);
@@ -93,7 +92,7 @@ public class CalculatorGUI extends JFrame implements ActionListener {
                 textField.setText(textField.getText() + str.charAt(i));
             }
         }
-        
+
         if (e.getSource() == addButton) {
             num1 = Double.parseDouble(textField.getText());
             operator = '+';
@@ -130,7 +129,7 @@ public class CalculatorGUI extends JFrame implements ActionListener {
                     if (num2 != 0) {
                         result = num1 / num2;
                     } else {
-                        JOptionPane.showMessageDialog(null, "Error dividing by !");
+                        JOptionPane.showMessageDialog(null, "Error dividing by 0!");
                     }
                     break;
             }
@@ -140,6 +139,6 @@ public class CalculatorGUI extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        
+        new CalculatorGUI();
     }
 }
