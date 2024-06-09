@@ -138,4 +138,8 @@ public class CalculatorGUI extends JFrame implements ActionListener {
             num1 = result;
         }
     }
+
+    public static void main(String[] args) {
+        
+    }
 }
