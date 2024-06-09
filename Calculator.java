@@ -134,6 +134,8 @@ public class CalculatorGUI extends JFrame implements ActionListener {
                     }
                     break;
             }
+            textField.setText(String.valueOf(result));
+            num1 = result;
         }
     }
 }
