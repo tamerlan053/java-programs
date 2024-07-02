@@ -19,5 +19,24 @@ public class BingoApp {
                 bingoCards[i].addNumber(randomNumber);
             }
         }
+
+        for (int i = 0; i < bingoCards.length; i++) {
+            System.out.println(bingoCards[i]);
+        }
+
+        boolean won = false;
+
+        while (!won) {
+            int checkerCard = random.nextInt(101);
+            System.out.println("Number " + checkerCard + " drawn...");
+
+            for (int i = 0; i < bingoCards.length; i++) {
+                if (bingoCards[i].hasNumber(checkerCard)) {
+                    System.out.println("BINGO!!");
+                    System.out.println(bingoCards[i]);
+                    won = true;
+                }
+            }
+        }
     }
 }
