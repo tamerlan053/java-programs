@@ -10,4 +10,9 @@ public class Image extends File {
         this.dimensions = dimensions;
         setContent("-=*");
     }
+
+    @Override
+    public void execute() {
+        
+    }
 }
