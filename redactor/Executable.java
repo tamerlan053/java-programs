@@ -1,5 +1,5 @@
-package exercises.ex1;
+package redactor;
 
 public interface Executable {
-
+    void execute();
 }
