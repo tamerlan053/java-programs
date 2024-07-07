@@ -13,4 +13,16 @@ public abstract class File implements Executable {
         this.name = name;
         this.fileSize = fileSize;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public int getFileSize() {
+        return fileSize;
+    }
 }
