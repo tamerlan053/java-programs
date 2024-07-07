@@ -8,4 +8,9 @@ public abstract class File implements Executable {
     public File(String name) {
         this(name, 1024);
     }
+
+    public File(String name, int fileSize) {
+        this.name = name;
+        this.fileSize = fileSize;
+    }
 }
