@@ -9,4 +9,10 @@ public class Folder implements Executable {
     public Folder(String name) {
         this.name = name;
     }
+
+    public void addFiles(File[] array) {
+        for (int i = 0; i < array.length; i++) {
+            files.add(array[i]);
+        }
+    }
 }
