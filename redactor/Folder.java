@@ -15,4 +15,13 @@ public class Folder implements Executable {
             files.add(array[i]);
         }
     }
+
+    @Override
+    public void execute() {
+        System.out.println(name);
+
+        for (int i = 0; i < files.size(); i++) {
+            System.out.println(files.get(i).toString());
+        }
+    }
 }
